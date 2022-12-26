@@ -1,3 +1,16 @@
-h2 {
-	color: "blue";
+.navigation-bar {
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto auto auto auto;
+}
+
+.explore-menu {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+.explore-menu-item {
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
 }
