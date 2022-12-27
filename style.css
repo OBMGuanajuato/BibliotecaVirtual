@@ -1,43 +1,60 @@
 .navigation-bar {
-	display: grid;
+	display: flex;
 	width: 100%;
-	grid-template-columns: 25% 25% 25% 25%;
-	position: sticky;
+	align-items: center;
 }
-.navigation-bar-item {
+.navigation-bar-button{
+	width: 100%;
 	text-align: center;
+	padding: 15px 15px;
+	transition: background-color .3s;
 }
-.navigation-bar-item:hover {
+.navigation-bar-button:hover{
+	background-color: #aaa6a6;
+}
+.navigation-bar-dropdown{
+	display: block;
+	cursor: pointer;
+}
+.navigation-bar-dropdown-buttons{
+	background: #889199;
+	width: auto;
+	transform: translate(-16px, 16px);
+	display: none;
+	padding: 0;
+}
+.navigation-bar-dropdown:hover .navigation-bar-dropdown-buttons{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
+.navigation-bar-dropdown-button{
+	align-items: center;
+	padding: 15px 15px;
+	border: solid #000000 .4pt;
+	transition: background-color .3s;
+}
+.navigation-bar-dropdown-button:hover{
 	background-color: #aaa6a6;
 }
 
-.navigation-bar-dropdown{
-	display: inline-block;
-}
-.navigation-bar-dropdown:hover .navigation-bar-dropdown-items{
-	display: block;
-}
-.navigation-bar-dropdown-items{
-	z-index: 9999;
-	position: absolute;
-	text-align: left;
-	display: none;
-}
-.navigation-bar-dropdown-item{
-	background-color: #aaa6a6;
-}
 
 .explore-menu {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 33% 33% 33%;
 	padding: 10px;
 }
 .explore-menu-item {
-  padding: 20px;
+  padding: 20px 20px;
+	display: inline-block;
   font-size: 25px;
-  text-align: center;
-	background-color: rgb(136, 145, 153);
+	text-align: center;
+	border: solid #000000;
+	transition: background-color .3s;
 }
-.explore-menu-item a {
+.explore-menu-item {
 	color: #000000
+}
+.explore-menu-item:hover{
+	background-color: #889199;
 }
