@@ -42,13 +42,15 @@
 .explore-menu {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
+	gap: 2px;
 	padding: 10px;
 }
 .explore-menu-item {
   padding: 20px 20px;
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
   font-size: 25px;
-	text-align: center;
 	border: solid #000000;
 	transition: background-color .3s;
 }
@@ -57,4 +59,35 @@
 }
 .explore-menu-item:hover{
 	background-color: #889199;
+}
+
+.shelf{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+.libro-virtual{
+	width: 250px;
+	border: solid black;
+	text-align: center;
+	padding: 10px;
+	aspect-ratio: 1;
+	transition: box-shadow .5s, transform 1s;
+}
+.libro-virtual-preview{
+	width: 100%;
+}
+.libro-virtual-info{
+	text-align: left;
+}
+.libro-virtual-temas{
+	text-align: left;
+}
+.libro-virtual-dificultad{
+	text-align: center;
+}
+.libro-virtual:hover{
+	box-shadow: 10px 5px 5px black;
+	transform: translate(-4px, -4px);
 }
