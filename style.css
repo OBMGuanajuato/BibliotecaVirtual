@@ -1,7 +1,30 @@
 .navigation-bar {
 	display: grid;
 	width: 100%;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 25% 25% 25% 25%;
+	position: sticky;
+}
+.navigation-bar-item {
+	text-align: center;
+}
+.navigation-bar-item:hover {
+	background-color: #aaa6a6;
+}
+
+.navigation-bar-dropdown{
+	display: inline-block;
+}
+.navigation-bar-dropdown:hover .navigation-bar-dropdown-items{
+	display: block;
+}
+.navigation-bar-dropdown-items{
+	z-index: 9999;
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+.navigation-bar-dropdown-item{
+	background-color: #aaa6a6;
 }
 
 .explore-menu {
@@ -13,4 +36,8 @@
   padding: 20px;
   font-size: 25px;
   text-align: center;
+	background-color: rgb(136, 145, 153);
+}
+.explore-menu-item a {
+	color: #000000
 }
