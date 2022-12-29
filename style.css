@@ -6,6 +6,7 @@
 }
 .navigation-bar-button{
 	text-align: center;
+	font-size: 1.3em;
 	padding: 15px 15px;
 	transition: background-color .3s;
 }
@@ -72,6 +73,7 @@
 	padding: 10px;
 	aspect-ratio: 1;
 	transition: box-shadow .5s, transform 1s, width .2s;
+	font-size: 1.25rem;
 }
 .libro-virtual-preview{
 	width: 100%;
@@ -83,6 +85,7 @@
 	text-align: left;
 }
 .libro-virtual-dificultad{
+	font-size: 1rem; 
 	text-align: center;
 }
 .libro-virtual:hover{
@@ -94,17 +97,42 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	width: 100%;
 	align-items: center;
 	justify-content: center;
 }
 .contact-card{
-	width: 600px;
+	width: min(600px, 100vw);
 	display: grid;
 	align-items: center;
+	place-items: center;
 	gap: 10px;
 	grid-template-columns: 25% 1fr;
 	padding: 20px;
-	font-size: 2.3em;
 	background-color: azure;
+}
+.contact-card p {
+	font-size: 1.563rem;
+}
+
+h1 {
+	font-size: 3.052rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+h1 img {
+	width: 100px;
+}
+h2 {
+	font-size: 2.441rem;
+}
+h3 {
+	font-size: 1.953rem;
+}
+/* body {
+	background-color: #1e295b;
+	color: white;
+} */
+p {
+	font-size: 1rem;
 }
