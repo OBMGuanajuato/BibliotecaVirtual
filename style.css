@@ -1,5 +1,6 @@
 .navigation-bar {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
 	width: 100%;
 	align-items: center;
 }
@@ -62,13 +63,11 @@
 }
 
 .shelf{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
 	gap: 2px;
 }
 .libro-virtual{
-	width: 250px;
 	border: solid black;
 	text-align: center;
 	padding: 10px;
