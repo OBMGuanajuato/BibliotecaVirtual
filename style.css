@@ -3,6 +3,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
 	width: 100%;
 	align-items: center;
+	margin-bottom: 1em;
 }
 .navigation-bar-button{
 	text-align: center;
@@ -62,6 +63,7 @@
 	background-color: #889199;
 }
 
+
 .shelf{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -93,6 +95,7 @@
 	transform: translate(-4px, -4px);
 }
 
+
 .contact-rack{
 	display: flex;
 	flex-direction: column;
@@ -113,6 +116,21 @@
 .contact-card p {
 	font-size: 1.563rem;
 }
+
+
+.question-rack {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: min-content;
+	align-items: center;
+	gap: 10px;
+}
+.question {
+	background-color: #efe198;
+	padding: 20px;
+	display: block;
+}
+
 
 h1 {
 	font-size: 3.052rem;
