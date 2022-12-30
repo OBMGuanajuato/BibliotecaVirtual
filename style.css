@@ -99,36 +99,50 @@
 .contact-rack{
 	display: flex;
 	flex-direction: column;
+	width: 60vw;
+	margin-inline: auto;
 	gap: 10px;
 	align-items: center;
 	justify-content: center;
 }
 .contact-card{
-	width: min(600px, 100vw);
+	width: 100%;
 	display: grid;
 	align-items: center;
 	place-items: center;
 	gap: 10px;
-	grid-template-columns: 25% 1fr;
+	grid-template-columns: 25% 75%;
 	padding: 20px;
 	background-color: azure;
 }
 .contact-card p {
 	font-size: 1.563rem;
+	outline: solid black;
 }
 
 
 .question-rack {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: min-content;
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	margin-inline: auto;
 	align-items: center;
 	gap: 10px;
 }
 .question {
 	background-color: #efe198;
+	width: 100%;
 	padding: 20px;
-	display: block;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+.question p {
+	font-size: 1.25rem;
+	padding-bottom: 0;
+}
+.question img {
+	padding-top: 0;
+	width: 45px;
 }
 
 
