@@ -12,7 +12,7 @@
 	transition: background-color .3s;
 }
 .navigation-bar-button:hover{
-	background-color: #aaa6a6;
+	background-color: #5788bf;
 }
 .navigation-bar-dropdown{
 	display: block;
@@ -20,7 +20,7 @@
 }
 .navigation-bar-dropdown-buttons{
 	background: #889199;
-	width: auto;
+	width: auto;	
 	transform: translate(-16px, 16px);
 	display: none;
 	padding: 0;
@@ -38,7 +38,7 @@
 	transition: background-color .3s;
 }
 .navigation-bar-dropdown-button:hover{
-	background-color: #aaa6a6;
+	background-color: #5eb2d6;
 }
 
 
@@ -61,7 +61,7 @@
 	color: #000000
 }
 .explore-menu-item:hover{
-	background-color: #889199;
+	background-color: #6b98bf;
 }
 
 
@@ -161,10 +161,56 @@ h2 {
 h3 {
 	font-size: 1.953rem;
 }
-/* body {
-	background-color: #1e295b;
-	color: white;
-} */
 p {
 	font-size: 1rem;
+}
+
+/* --- Cosas de colores --- */
+body {
+	background-color: #013a57;
+	color: hsl(0, 0%, 90%);
+}
+h1 {
+	color: white;
+}
+a {
+	color: hsl(0, 0%, 90%);
+}
+.navigation-bar-button {
+	background-color: #13678a;
+	outline: solid rgb(6, 33, 45);
+	text-decoration: none;
+	color: white;
+}
+.navigation-bar-dropdown-button {
+	color: black;
+	background-color: #6b98bf;
+	text-decoration: none;
+}
+.explore-menu-item {
+	font-size: 2em;
+	background-color: #5eb2d6;
+	text-decoration: none;
+	outline: solid #1f3140;
+}
+.libro-virtual {
+	background-color: white;
+	color: black;
+}
+.libro-virtual a{
+	text-decoration: none;
+	color: black;
+}
+.question {
+	color: black;
+	border-radius: 10px;
+}
+.question a {
+	color: #13678a;
+}
+.contact-card {
+	color: black;
+}
+.contact-card a {
+	color: #005c53;
 }
