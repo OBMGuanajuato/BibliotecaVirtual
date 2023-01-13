@@ -164,6 +164,9 @@ h3 {
 p {
 	font-size: 1rem;
 }
+dt {
+	font-weight: bold;
+}
 
 /* --- Cosas de colores --- */
 body {
