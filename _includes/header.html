@@ -1,0 +1,48 @@
+
+			<header>
+				<nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="{{ '/' | relative_url }}" rel="noopener noreferrer">
+							<img src="{{ site.baseurl }}/assets/logos/obm.png" alt="Logo" width="auto" height="24" class="d-inline-block align-text-top/">
+							<span>Biblioteca Virtual OBM GTO</span>
+						</a>
+
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+ 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+									>Explorar</a>
+									<ul class="dropdown-menu">
+									{% for item in site.temas%}
+										<li> <a class="dropdown-item" 
+										href="{{ item.url | relative_url}}"  
+										rel="noopener noreferrer"
+										title="{{ item.title }}"
+										> {{ item.title }}</a></li>
+									{% endfor %}
+									</ul>
+								</li>
+    {%- assign default_paths = site.pages | sort:"order" | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- for path in site.main-menu -%}
+            {%- if path != 'index.html' -%}
+                {%- assign my_page = site.pages | where: "path", path | first -%}
+                {%- if my_page.title -%}
+                <li class="nav-item">
+                
+                <a class="nav-link" href="{{ my_page.url | relative_url }}" target="_self" rel="noopener noreferrer">{{ my_page.title | escape }}</a>
+                </li>
+                {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}								
+								
+
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
