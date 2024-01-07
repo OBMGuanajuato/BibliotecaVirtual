@@ -6,5 +6,5 @@ topic: "Combinatoria"
 file: "assets/pdf/Principios-de-conteo.pdf"
 author: "José Eduardo Payán Sosa"
 level: "Básico"
-alttext: "Comencemos a contar"
+alttext: "Comencemos a contar."
 ---

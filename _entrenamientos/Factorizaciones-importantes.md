@@ -6,5 +6,5 @@ topic: "Álgebra"
 file: "assets/pdf/Factorizaciones-importantes.pdf"
 author: "Ángel Manuel González López"
 level: "Intermedio"
-alttext: "Hay números más iguales que otros."
+alttext: "Hay factores muy importantes a considerar."
 ---

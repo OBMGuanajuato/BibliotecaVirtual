@@ -6,5 +6,5 @@ topic: "Combinatoria"
 file: "assets/pdf/Principios-básicos-de-conteo.pdf"
 author: "Desconocido"
 level: "Básico"
-alttext: "Comencemos a contar"
+alttext: "Comencemos a contar."
 ---

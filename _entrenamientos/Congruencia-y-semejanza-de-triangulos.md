@@ -6,5 +6,5 @@ topic: "Geometría"
 file: "assets/pdf/Congruencia-y-semejanza-de-triángulos.pdf"
 author: "Desconocido"
 level: "Básico"
-alttext: "Buen lugar donde comenzar."
+alttext: "¡Sé congruente! Por lo menos semejante..."
 ---

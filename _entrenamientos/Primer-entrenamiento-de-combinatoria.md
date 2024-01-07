@@ -6,5 +6,5 @@ topic: "Combinatoria"
 file: "assets/pdf/Primer-Entrenamiento-de-Combinatoria.pdf"
 author: "Owen Yael Mireles Briones"
 level: "Básico"
-alttext: "Comencemos a contar"
+alttext: "Comencemos a contar."
 ---

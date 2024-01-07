@@ -6,5 +6,5 @@ topic: "Combinatoria"
 file: "assets/pdf/Principio-aditivo-y-principio-multiplicativo.pdf"
 author: "Desconocido"
 level: "Básico"
-alttext: "Comencemos a contar"
+alttext: "Comencemos a contar."
 ---
