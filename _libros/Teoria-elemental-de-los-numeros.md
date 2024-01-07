@@ -1,7 +1,7 @@
 ---
 title: "Teoría elemental de los números para olimpíadas matemáticas"
 year: 2010
-olympiad: teo-elem-num
+thumbnail: "assets/img/teo-elem-num.png"
 topic: "Teoría de Números"
 file: "assets/pdf/Teoría-elemental-de-los-números.pdf"
 author: "David A. Santos"

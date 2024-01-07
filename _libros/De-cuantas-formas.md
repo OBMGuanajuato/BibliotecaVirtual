@@ -1,7 +1,7 @@
 ---
 title: "¿De cuántas formas?"
 year: 1972
-olympiad: vilenkin 
+thumbnail: "assets/img/vilenkin.png"
 topic: "Combinatoria"
 file: "/assets/pdf/De-cuántas-formas.pdf"
 author: "N. Vilenkin"

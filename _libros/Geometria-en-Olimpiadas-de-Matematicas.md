@@ -1,7 +1,7 @@
 ---
 title: "Geometría en Olimpiadas de Matemáticas"
 year: 2016
-olympiad: shuyriguin
+thumbnail: "assets/img/shuyriguin.png"
 topic: "Geometría"
 file: "/assets/pdf/Geometría en Olimpiadas de Matemáticas.pdf"
 author: "Jesús Jerónimo Castro"

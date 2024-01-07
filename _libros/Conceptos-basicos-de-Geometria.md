@@ -1,7 +1,7 @@
 ---
 title: "Conceptos básicos de Geometría"
 year: 2005
-olympiad: intro-a-geo
+thumbnail: "assets/img/intro-a-geo.png"
 topic: "Geometría"
 file: "/assets/pdf/Conceptos_Básicos_de_Geometría.pdf"
 author: "Alejandro ?"
