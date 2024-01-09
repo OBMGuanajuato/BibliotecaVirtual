@@ -1,5 +1,5 @@
 ---
 title: Selectivos anteriores
-url-name: selectivos-anteriores
+urlname: selectivos-anteriores
 layout: default
 ---
