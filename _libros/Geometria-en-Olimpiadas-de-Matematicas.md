@@ -3,7 +3,7 @@ title: "Geometría en Olimpiadas de Matemáticas"
 year: 2016
 thumbnail: "assets/img/shuyriguin.png"
 topic: "Geometría"
-file: "/assets/pdf/Geometría en Olimpiadas de Matemáticas.pdf"
+file: "/assets/pdf/Material/Geometría en Olimpiadas de Matemáticas.pdf"
 author: "Jesús Jerónimo Castro"
 level: Básico - Intermedio
 alttext: "Un gran libro de Geometría."
