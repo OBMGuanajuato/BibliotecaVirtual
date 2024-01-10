@@ -3,7 +3,7 @@ title: "Conceptos básicos de Geometría"
 year: 2005
 thumbnail: "assets/img/intro-a-geo.png"
 topic: "Geometría"
-file: "/assets/pdf/Conceptos_Básicos_de_Geometría.pdf"
+file: "/assets/pdf/Material/Conceptos_Básicos_de_Geometría.pdf"
 author: "Alejandro ?"
 level: Básico
 alttext: "Todos hemos entrenado con este cuadernillo alguna vez."

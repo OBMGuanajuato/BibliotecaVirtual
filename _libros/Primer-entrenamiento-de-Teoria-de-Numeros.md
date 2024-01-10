@@ -3,7 +3,7 @@ title: "Primer entrenamiento de Teoría de Números"
 year: 2021
 thumbnail: "assets/img/Logo-ommgto.png"
 topic: "Teoría de Números"
-file: "assets/pdf/Primer-entrenamiento-de-Teoria-de-Numeros.pdf"
+file: "assets/pdf/Material/Primer-entrenamiento-de-Teoria-de-Numeros.pdf"
 author: "Jesús Liceaga"
 level: Básico
 alttext: "Comenzaremos con el 1, ya de ahí es trivial."

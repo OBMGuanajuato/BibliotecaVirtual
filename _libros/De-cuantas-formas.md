@@ -3,7 +3,7 @@ title: "¿De cuántas formas?"
 year: 1972
 thumbnail: "assets/img/vilenkin.png"
 topic: "Combinatoria"
-file: "/assets/pdf/De-cuántas-formas.pdf"
+file: "/assets/pdf/Material/De-cuántas-formas.pdf"
 author: "N. Vilenkin"
 level: Básico - Intermedio - Avanzado
 alttext: "En la URSS, ¡la Combinatoria cuenta contigo!"

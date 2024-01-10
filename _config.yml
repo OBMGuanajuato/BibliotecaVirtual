@@ -45,7 +45,7 @@ collections:
     output: true
   libros:
     output: true
-  listas:
+  ediciones:
     output: true
-    archive: true
-
+  selectivos:
+    output: true
