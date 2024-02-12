@@ -45,7 +45,11 @@ collections:
     output: true
   libros:
     output: true
-  ediciones:
+  ediciones_obm:
     output: true
-  selectivos:
+  selectivos_obm:
+    output: true
+  ediciones_ofm:
+    output: true
+  selectivos_ofm:
     output: true
