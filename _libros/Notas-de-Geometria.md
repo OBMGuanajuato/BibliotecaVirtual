@@ -14,5 +14,4 @@ alttext: "¿Sí notas que viene en las Notas?"
   <li class="list-group-item">Congruencia y Semejanza</li>
   <li class="list-group-item">Puntos y rectas en los triángulos</li>
   <li class="list-group-item">Ángulos en la circunferencia</li>
-  <li class="list-group-item">Ángulos en la circunferencia</li>
 </ul>
