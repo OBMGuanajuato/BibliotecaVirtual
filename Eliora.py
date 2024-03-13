@@ -93,11 +93,18 @@ material_is_book = tk.BooleanVar(root, False)
 content_entries = []
 content_entries_text = []
 def show_contents():
-  material_contents_label.grid(row=0, column=3)
-  material_contents_first_entry.grid(row=1, column=3)
-  material_contents_add_button.grid(row=1, column=4)
-  content_entries.append(material_contents_first_entry)
+  if material_is_book.get():
+    material_contents_label.grid(row=0, column=3)
+    material_contents_first_entry.grid(row=1, column=3)
+    material_contents_add_button.grid(row=1, column=4)
+    content_entries.append(material_contents_first_entry)
+    return None
+  material_contents_label.grid_forget()
+  for entry in content_entries: entry.grid_forget()
+  material_contents_add_button.grid_forget()
+  content_entries.clear()
   return None
+  
 material_is_book_checkbox = tk.Checkbutton(root, text="Es un libro o cuadernillo", variable=material_is_book, command=show_contents, onvalue=True, offvalue=False).grid(row=6, column=2)
 
 def material_new_content_entry():
