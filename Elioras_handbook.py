@@ -83,8 +83,9 @@ def open_material_register(root):
 
   material_topic_label = tk.Label(material_tab, text="Tema")
   material_topic_label.grid(row=2, column=0)
-  material_topic_textbox = tk.Entry(material_tab, width=25)
-  material_topic_textbox.grid(row=2, column=1)
+  material_topic_lisbox = tk.Listbox(material_tab, selectmode="single", height=6, exportselection=0)
+  material_topic_lisbox.insert(tk.END, *["Álgebra", "Combinatoria", "Geometría", "Material introductorio", "Métodos de ataque de problemas", "Teoría de Números"])
+  material_topic_lisbox.grid(row=2, column=1)
 
   material_year_label = tk.Label(material_tab, text="Año de publicación")
   material_year_label.grid(row=3, column=0)
@@ -108,8 +109,8 @@ def open_material_register(root):
 
   material_thumbnail_label = tk.Label(material_tab, text="Imagen de miniatura")
   material_thumbnail_label.grid(row=7, column=0)
-  material_thumbnail_textbox = tk.Entry(material_tab, width=25)
-  material_thumbnail_textbox.grid(row=7, column=1)
+  material_thumbail_combobox = ttk.Combobox(material_tab, values=sorted(os.listdir("assets/img/")))
+  material_thumbail_combobox.grid(row=7, column=1)
 
   material_is_book = tk.BooleanVar(material_tab, False)
   content_entries = []
@@ -125,13 +126,13 @@ def open_material_register(root):
   registrar_material_button = tk.Button(material_tab, text="Registrar material",
     command= lambda: registrar_material(
       material_title_textbox.get(),
-      material_topic_textbox.get(),
+      material_topic_lisbox.get(tk.ANCHOR),
       material_author_textbox.get(),
       int(material_year_textbox.get()),
       material_level_textbox.get(),
       material_alttext_textbox.get(),
       material_filename_textbox.get(),
-      material_thumbnail_textbox.get(),
+      material_thumbail_combobox.get(),
       material_is_book.get(),
       content_entries_text
     )
@@ -169,9 +170,9 @@ thumbnail: "assets/img/{thumbnail}" """
       if "3<sup>ro</sup>" in level:
         filename = filename + "Sec3"
 
-    destination_folder = "_selectivos_" + olympiad.lower()
     base_string = base_string + f'\nfile: "assets/pdf/Selectivos/{olympiad}/{filename+".pdf"}"'
     base_string = base_string + "\n---"
+    destination_folder = "_selectivos_" + olympiad.lower()
     with open(os.path.join(destination_folder, filename+'.md'), 'w') as f:
       f.write(base_string)
 
