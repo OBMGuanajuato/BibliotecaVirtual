@@ -41,6 +41,9 @@ collections:
     layout: archive
     output: true
     permalink: '/:name/'
+  olimpiadas:
+    output: true
+    permalink: '/:name/'
   entrenamientos:
     output: true
   libros:
@@ -52,4 +55,8 @@ collections:
   ediciones_ofm:
     output: true
   selectivos_ofm:
+    output: true
+  ediciones_omm:
+    output: true
+  selectivos_omm:
     output: true
