@@ -34,9 +34,11 @@ main-menu:
  - faq.html
  - contact.html
  - autores.html
+ - historia-y-colaboradores.html
 
 collections:
   faqs:
+  colaboradores:
   temas:
     layout: archive
     output: true
