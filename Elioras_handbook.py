@@ -186,8 +186,9 @@ thumbnail: "assets/img/{thumbnail}" """
   def show_editions(event):
     olympiad = exam_olympiad_listbox.get(tk.ANCHOR)
     exam_edition_listbox.delete(0, tk.END)
-    editions = sorted([edition[:-3] for edition in os.listdir("_ediciones_"+olympiad.lower())])
-    exam_edition_listbox.insert(0, *editions)
+    with open(f"_data/ediciones_{olympiad.lower()}.yml", 'r') as f:
+      editions = f.readlines()[::2]
+    exam_edition_listbox.insert(0, *[edition[8:-1] for edition in editions])
     if olympiad=="OBM":
       exam_level_label.grid(row=5, column=1)
       exam_level_listbox.grid(row=5, column=2)

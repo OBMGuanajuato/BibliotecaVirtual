@@ -33,7 +33,6 @@ github_username:  OBMGuanajuato
 main-menu:
  - faq.html
  - contact.html
- - autores.html
  - historia-y-colaboradores.html
 
 collections:
@@ -47,18 +46,7 @@ collections:
     output: true
     permalink: '/:name/'
   entrenamientos:
-    output: true
   libros:
-    output: true
-  ediciones_obm:
-    output: true
   selectivos_obm:
-    output: true
-  ediciones_ofm:
-    output: true
   selectivos_ofm:
-    output: true
-  ediciones_omm:
-    output: true
   selectivos_omm:
-    output: true
