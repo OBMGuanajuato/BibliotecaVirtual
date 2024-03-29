@@ -21,15 +21,15 @@ def open_material_register(root):
     contents: list=None
   ):
     base_string = f"""---
-  title: "{title}"
-  year: {year}
-  thumbnail: "assets/img/{thumbnail}"
-  topic: "{topic}"
-  file: "assets/pdf/Material/{filename}"
-  author: "{author}"
-  level: "{level}"
-  alttext: "{alttext}"
-  ---"""
+title: "{title}"
+year: {year}
+thumbnail: "assets/img/{thumbnail}"
+topic: "{topic}"
+file: "assets/pdf/Material/{filename}"
+author: "{author}"
+level: "{level}"
+alttext: "{alttext}"
+---"""
     if is_book:
       if contents is None: return None
       base_string = base_string + '\n\n<ul class="list-group list-group-flush">\n'
@@ -38,9 +38,14 @@ def open_material_register(root):
       base_string = base_string + '</ul>'
       destination_folder = "_libros/"
     else: destination_folder = "_entrenamientos/"
-    catalogue_name = title.replace(',', '')
-    catalogue_name = catalogue_name.replace(' ', '-')
-    catalogue_name = unidecode(catalogue_name)
+    base_name = title.replace(',', '')
+    base_name = base_name.replace(' ', '-')
+    base_name = unidecode(base_name)
+    catalogue_name = base_name
+    k = 1
+    while os.path.isfile(os.path.join(destination_folder, catalogue_name+'.md')):
+      catalogue_name = base_name + "-" + str(k)
+      k += 1
     with open(os.path.join(destination_folder, catalogue_name+'.md'), 'w') as f:
       f.write(base_string)
     return None
