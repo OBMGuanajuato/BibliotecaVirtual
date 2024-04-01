@@ -1,5 +1,5 @@
 ---
 title: "Álgebra"
-layout: archive_no_books
+layout: archive
 urlname: algebra
 ---
