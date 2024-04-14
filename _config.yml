@@ -45,8 +45,14 @@ collections:
   olimpiadas:
     output: true
     permalink: '/:name/'
+  olimpiadas_nacionales:
+    output: true
+    permalink: '/:name/'
   entrenamientos:
   libros:
   selectivos_obm:
-  selectivos_ofm:
-  selectivos_omm:
+  selectivos_ofmgto:
+  selectivos_ommgto:
+  nacionales_ommeb:
+  nacionales_omm:
+  nacionales_cnfomm:
