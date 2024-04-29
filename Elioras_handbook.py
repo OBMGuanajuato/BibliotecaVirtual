@@ -159,26 +159,32 @@ year: "{edition}"
 exam-number: {exam_number}
 thumbnail: "assets/img/{thumbnail}" """
 
-    filename = str(edition)+'-S'+str(exam_number)
+    filename = str(edition)+' S'+str(exam_number)
+    catalogue_name = str(edition)+'-S'+str(exam_number)
 
     if olympiad=="OBM":
       destination_folder = "_selectivos_obm/"
       base_string = base_string + f'\nlevel: "{level}"'
       filename = filename + "."
+      catalogue_name = catalogue_name + "."
       # Lo que sigue supone fuertemente que los niveles de la OBM no van a cambiar en un futuro cercano. Por favor, actualiza esta parte del código si algo cambia. Espero no causar muchos problemas en el futuro. -- Joshua
       if "4<sup>to</sup>" in level:
         filename = filename + "Prim4,5"
+        catalogue_name = catalogue_name + "Prim4,5"
       if "6<sup>to</sup>" in level:
         filename = filename + "Prim6, Sec1"
+        catalogue_name = catalogue_name + "Prim6, Sec1"
       if "2<sup>do</sup>" in level:
         filename = filename + "Sec2"
+        catalogue_name = catalogue_name + "Sec2"
       if "3<sup>ro</sup>" in level:
         filename = filename + "Sec3"
+        catalogue_name = catalogue_name + "Sec3"
 
     base_string = base_string + f'\nfile: "assets/pdf/Selectivos/{olympiad}/{filename+".pdf"}"'
     base_string = base_string + "\n---"
     destination_folder = "_selectivos_" + olympiad.lower()
-    with open(os.path.join(destination_folder, filename+'.md'), 'w') as f:
+    with open(os.path.join(destination_folder, catalogue_name+'.md'), 'w') as f:
       f.write(base_string)
 
     return None
