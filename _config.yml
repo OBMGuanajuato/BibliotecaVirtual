@@ -48,6 +48,9 @@ collections:
   olimpiadas_nacionales:
     output: true
     permalink: '/:name/'
+  hall_of_fame:
+    output: true
+    permalink: '/:name/'
   entrenamientos:
   libros:
   selectivos_obm:
